@@ -11,15 +11,15 @@ const Infos: NextPage = () => {
       <h1 className="text-3xl mb-5">Generelle Infos</h1>
       <ul className="list-disc list-inside">
         <li>
-          Das Turnier findet am 20. März statt und startet um 16 Uhr. Da wir
+          Das Turnier findet am 21. Mai statt und startet um 16 Uhr. Da wir
           diesmal alle Spiele an einem Tag durchführen, ist mehr Zeit
           einzuplanen.
         </li>
         <li>
           <a href="https://www.youtube.com/channel/UC3ITorme_AMkqHdw0AUwZ4A">
             Grapfen
-          </a>
-          streamt auf seinem YouTube-Kanal das Turnier.
+          </a>{" "}
+          streamt auf seinem YouTube-Kanal das Turnier.{" "}
           <strong>
             Es ist ausdrücklich empfohlen, während des Turniers den Stream zu
             schauen, um keine wichtigen Infos zu verpassen.
@@ -38,6 +38,9 @@ const Infos: NextPage = () => {
         <li>
           Die Cookies-Regen werden deaktiviert und es werden immer zwei Teams
           gegeneinander antreten.
+        </li>
+        <li>
+          Das Gewinnerteam erhält 10 € Preisgeld, für jeden Spieler also 5 €.
         </li>
       </ul>
       <p>
