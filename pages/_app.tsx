@@ -19,10 +19,10 @@ function App({ Component, pageProps }: AppProps) {
           />
         </nav>
       </header>
-      <main className="p-5 text-slate-50">
+      <main className="p-5 text-slate-50 grow">
         <Component {...pageProps} />
       </main>
-      <footer className="absolute bottom-0 right-0 left-0 text-gray-300 flex justify-center">
+      <footer className="text-gray-300 flex justify-center justify-self-end">
         <p className="text-center p-2">
           Quellcode auf{" "}
           <Link href="https://github.com/CookiesTournament/website">

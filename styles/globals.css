@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 #__next {
-  min-height: 100vh;
+  @apply min-h-screen flex flex-col;
 }
