@@ -7,6 +7,10 @@ const Rules: NextPage = () => {
     <>
       <Head>
         <title>Cookies Turnier - Regeln</title>
+        <meta
+          name="description"
+          content="Auch bei diesem Turnier gilt es Regeln einzuhalten!"
+        />
       </Head>
       <h1 className="text-3xl mb-5">Turnierregeln</h1>
       <ol className="list-decimal list-inside flex flex-col gap-3">

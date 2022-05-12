@@ -7,6 +7,10 @@ const Infos: NextPage = () => {
     <>
       <Head>
         <title>Cookies Turnier - Regeln</title>
+        <meta
+          name="description"
+          content="Alles Wichtige zum Turnier findet sich hier!"
+        />
       </Head>
       <h1 className="text-3xl mb-5">Generelle Infos</h1>
       <ul className="list-disc list-inside">
