@@ -1,7 +1,8 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import { Book, Discord, HouseDoor, Info, Pen } from "react-bootstrap-icons";
+import { Book, Discord, HouseDoor, Info } from "react-bootstrap-icons";
 import { NavItem } from "../components/NavItem";
+import Link from "next/link";
 
 function App({ Component, pageProps }: AppProps) {
   return (
@@ -21,6 +22,14 @@ function App({ Component, pageProps }: AppProps) {
       <main className="p-5 text-slate-50">
         <Component {...pageProps} />
       </main>
+      <footer className="absolute bottom-0 right-0 left-0 text-gray-300 flex justify-center">
+        <p className="text-center p-2">
+          Quellcode auf{" "}
+          <Link href="https://github.com/CookiesTournament/website">
+            <a className="text-sky-600 hover:text-sky-800 transition">Github</a>
+          </Link>
+        </p>
+      </footer>
     </>
   );
 }
