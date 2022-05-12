@@ -93,6 +93,11 @@ const Rules: NextPage = () => {
           </em>
         </li>
         <li>
+          Sollte das Spiel unerwartet abstürzen, ist der Teilnehmer
+          verpflichtet, einen Screenshot von Fehlermeldung und genauer Uhrzeit
+          zu machen, um einen extra herbeigeführten Absturz auszuschließen.
+        </li>
+        <li>
           Beide Teams werden gegenüber platziert. Die Teams Rot und Blau werden
           mit den Spielern besetzt.
         </li>
@@ -100,7 +105,7 @@ const Rules: NextPage = () => {
         <li>Das Replay jeder Runde wird im Nachhinein nochmals gesichtet.</li>
         <li>
           Alle Spiele des Turniers werden live auf dem YouTube Kanal von Grapfen
-          übertragen. Die Spiele sind auch im nachhinein einsehbar. Jeder
+          übertragen. Die Spiele sind auch im Nachhinein einsehbar. Jeder
           Teilnehmer sollte den Stream verfolgen, um keine wichtigen
           Informationen zu verpassen.
           <br />
