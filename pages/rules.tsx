@@ -80,7 +80,8 @@ const Rules: NextPage = () => {
         <li>
           Die gespielte Map wird nach dem Zufallsprinzip ausgelost. Es können
           auch Maps ausgewählt werden, welche auf dem Netzwerk nicht mehr
-          spielbar sind.
+          öffentlich spielbar sind. Die Map &quot;AirCraft&quot; wird als
+          einzige Ausnahme nicht ausgelost werden.
         </li>
         <li>
           Der Cookies-Regen ist in den Turnierrunden abgeschaltet. Somit haben
@@ -121,6 +122,10 @@ const Rules: NextPage = () => {
         <li>
           Es muss diejenige Person mit einem Minecraft-Account spielen, der
           dieser auch gehört (die Person, die im Besitz der Account-E-Mail ist).
+        </li>
+        <li>
+          Die Finalspiele werden in Form eines Best-of-3 ausgetragen. Sprich:
+          Wer zwei Siege in 3 Spielen holt, gewinnt das Turnier.
         </li>
       </ol>
       <p>Die Turnierleitung behält sich vor, die Regeln jederzeit zu ändern.</p>
