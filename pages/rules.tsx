@@ -33,6 +33,10 @@ const Rules: NextPage = () => {
           Ersatztermin vereinbart werden.
         </li>
         <li>
+          Ein Kampf dauert maximal 20 Minuten. Nach Ablauf dieser Zeit gewinnt
+          automatisch das Team mit den meisten Prozenten im Turm.
+        </li>
+        <li>
           Jegliche Verwendung von Cheats ist untersagt und wird mit
           Disqualifikation bestraft und zwar beide Teampartner.
         </li>
