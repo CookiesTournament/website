@@ -24,6 +24,7 @@ const Roulette: NextPage = () => {
 
   const [value, setValue] = useState(options[0]);
   const [started, setStarted] = useState(false);
+  const [finished, setFinished] = useState(false);
 
   const tick = (cycles: number, time: number) => {
     cycles--;
@@ -36,6 +37,10 @@ const Roulette: NextPage = () => {
       setTimeout(() => {
         return tick(cycles, time);
       }, time);
+    } else {
+      setTimeout(() => {
+        setFinished(true);
+      }, 1000);
     }
   };
 
@@ -53,8 +58,15 @@ const Roulette: NextPage = () => {
         <title>Cookies Turnier - Map Roulette</title>
         <link rel="icon" href="/img/cookie.png" />
       </Head>
-      <div className="flex justify-center items-center h-screen">
-        <h1 className="text-white text-7xl">{value}</h1>
+      <div className="flex flex-col justify-center items-center h-screen text-white">
+        <h2 className="text-xl">Es wird gespielt auf...</h2>
+        <h1
+          className={`text-7xl transition ${
+            finished ? "scale-125 text-yellow-500" : ""
+          }`}
+        >
+          {value}
+        </h1>
       </div>
     </>
   );
