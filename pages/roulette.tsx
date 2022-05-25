@@ -1,18 +1,49 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import { useEffect } from "react";
-import { Book, Info } from "react-bootstrap-icons";
+import { useEffect, useState } from "react";
 
-const Home: NextPage = () => {
-  const options = ["AurumMeum", "Chronos", "Huis", "Industry", "Vegetation"];
-  const value = "";
+function shuffleArray(arr: unknown[]) {
+  arr.sort(() => Math.random() - 0.5);
+}
+
+const Roulette: NextPage = () => {
+  const options = [
+    "Vegetation",
+    "Modern",
+    "Industry",
+    "Flowery",
+    "Currywurst",
+    "BigJungle",
+    "AurumMeum",
+    "Anniversary",
+    "Halloween",
+    "Huis",
+    "Sphinx",
+    "Chronos",
+  ];
+
+  const [value, setValue] = useState(options[0]);
+  const [started, setStarted] = useState(false);
+
+  const tick = (cycles: number, time: number) => {
+    cycles--;
+    time += 20;
+
+    shuffleArray(options);
+    setValue(options[0]);
+
+    if (cycles > 0) {
+      setTimeout(() => {
+        return tick(cycles, time);
+      }, time);
+    }
+  };
 
   useEffect(() => {
-    let time = 200;
-    let cycles = 30;
-    const timeout = setTimeout(() => {}, time);
+    if (!started) {
+      setStarted(true);
+      tick(30, 100);
+    }
     return () => {};
   }, []);
 
@@ -22,9 +53,11 @@ const Home: NextPage = () => {
         <title>Cookies Turnier - Map Roulette</title>
         <link rel="icon" href="/img/cookie.png" />
       </Head>
-      <p>{value}</p>
+      <div className="flex justify-center items-center h-screen">
+        <h1 className="text-white text-7xl">{value}</h1>
+      </div>
     </>
   );
 };
 
-export default Home;
+export default Roulette;
