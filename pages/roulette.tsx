@@ -61,8 +61,8 @@ const Roulette: NextPage = () => {
       <div className="flex flex-col justify-center items-center h-screen text-white">
         <h2 className="text-xl">Es wird gespielt auf...</h2>
         <h1
-          className={`text-7xl transition ${
-            finished ? "scale-125 text-yellow-500" : ""
+          className={`text-7xl transition animate-pulse ${
+            finished ? "scale-125 text-yellow-500 " : ""
           }`}
         >
           {value}
